@@ -1,0 +1,6 @@
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\Portfolio.DAL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\Portfolio.DAL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.csproj.AssemblyReference.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.csproj.CoreCompileInputs.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.pdb

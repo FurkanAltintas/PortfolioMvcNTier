@@ -1,0 +1,6 @@
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\bin\Debug\Portfolio.BLL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\bin\Debug\Portfolio.BLL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.csproj.AssemblyReference.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.csproj.CoreCompileInputs.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.pdb

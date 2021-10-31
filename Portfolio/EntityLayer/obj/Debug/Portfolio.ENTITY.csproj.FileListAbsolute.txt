@@ -1,0 +1,6 @@
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\obj\Debug\Portfolio.ENTITY.csproj.AssemblyReference.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\obj\Debug\Portfolio.ENTITY.csproj.CoreCompileInputs.cache
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\EntityLayer\obj\Debug\EntityLayer.pdb
