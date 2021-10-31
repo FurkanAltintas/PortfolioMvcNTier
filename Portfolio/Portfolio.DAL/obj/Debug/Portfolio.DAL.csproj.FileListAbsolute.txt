@@ -4,3 +4,11 @@ C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Port
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.csproj.CoreCompileInputs.cache
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.dll
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\Portfolio.DAL.dll.config
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityFramework.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityLayer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityLayer.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityFramework.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.DAL\obj\Debug\Portfolio.DAL.csproj.CopyComplete
