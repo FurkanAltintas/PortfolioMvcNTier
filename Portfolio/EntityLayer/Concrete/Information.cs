@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class Information
+    public class Information : BaseEntity
     {
-        public int InformationId { get; set; }
+        public int Id { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
