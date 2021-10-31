@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class Contact
+    public class Contact : BaseEntity
     {
-        public int ContactId { get; set; }
+        public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public string Subject { get; set; }
