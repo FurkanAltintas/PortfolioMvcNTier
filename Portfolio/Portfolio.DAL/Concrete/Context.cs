@@ -1,4 +1,4 @@
-﻿using EntityLayer.Concrete;
+﻿using Portfolio.ENTITY.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
