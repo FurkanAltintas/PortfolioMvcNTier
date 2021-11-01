@@ -51,15 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAuthorityDal.cs" />
+    <Compile Include="Abstract\IBackgroundDal.cs" />
+    <Compile Include="Abstract\IContactDal.cs" />
+    <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\IInformationDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
+    <Compile Include="Abstract\IWorkDal.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="EntityFramework\EfAboutRepository.cs" />
+    <Compile Include="EntityFramework\EfAuthorityRepository.cs" />
+    <Compile Include="EntityFramework\EfBackgroundRepository.cs" />
+    <Compile Include="EntityFramework\EfContactRepository.cs" />
+    <Compile Include="EntityFramework\EfInformationRepository.cs" />
+    <Compile Include="EntityFramework\EfUserRepository.cs" />
+    <Compile Include="EntityFramework\EfWorkRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="EntityFramework\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
