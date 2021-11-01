@@ -41,7 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Concrete\BackgroundManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ValidationRules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\Portfolio.ENTITY.csproj">
+      <Project>{c44305f6-56c1-425c-ae10-04de51633b20}</Project>
+      <Name>Portfolio.ENTITY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portfolio.DAL\Portfolio.DAL.csproj">
+      <Project>{28259498-94d7-4027-a339-1a3089f787db}</Project>
+      <Name>Portfolio.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
