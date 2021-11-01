@@ -47,3 +47,14 @@ C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\obj\Debug\Portf
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.csproj.CopyComplete
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.dll
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityFramework.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityFramework.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityLayer.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\Portfolio.BLL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\Portfolio.DAL.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\EntityLayer.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\Portfolio.BLL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\Portfolio.DAL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio\Portfolio.UI\bin\Portfolio.DAL.dll.config

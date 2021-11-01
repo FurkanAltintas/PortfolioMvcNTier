@@ -119,10 +119,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Slider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -130,6 +132,8 @@
     <Content Include="Content\univers\main.70a66962.js.gz" />
     <Content Include="Content\univers\main.70a66962.map" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\HomeLayout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -139,11 +143,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Images\" />
     <Folder Include="Models\" />
     <Folder Include="Security\" />
-    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\Portfolio.ENTITY.csproj">
+      <Project>{c44305f6-56c1-425c-ae10-04de51633b20}</Project>
+      <Name>Portfolio.ENTITY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portfolio.BLL\Portfolio.BLL.csproj">
+      <Project>{4b1bc2cb-2c08-4c99-a3db-bf0004f82724}</Project>
+      <Name>Portfolio.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portfolio.DAL\Portfolio.DAL.csproj">
+      <Project>{28259498-94d7-4027-a339-1a3089f787db}</Project>
+      <Name>Portfolio.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
