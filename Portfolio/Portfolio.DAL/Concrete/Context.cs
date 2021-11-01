@@ -14,6 +14,7 @@ namespace Portfolio.DAL.Concrete
         public DbSet<Authority> Authorities { get; set; }
         public DbSet<Background> Backgrounds { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Degree> Degrees { get; set; }
         public DbSet<Information> Informations { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Work> Works { get; set; }
