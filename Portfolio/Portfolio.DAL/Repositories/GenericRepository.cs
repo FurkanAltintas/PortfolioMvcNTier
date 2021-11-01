@@ -18,8 +18,7 @@ namespace Portfolio.DAL.Repositories
             {
                 c.Entry(p).State = EntityState.Added;
                 c.SaveChanges();
-            }
-            
+            }          
         }
 
         public void Delete(T p)
