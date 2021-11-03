@@ -14,6 +14,12 @@ namespace Portfolio.UI
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Detail",
+                url: "{controller}/{id}/{filter}",
+                defaults: new { controller = "Works", action = "Detail", id = UrlParameter.Optional, String = "" }
+);
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
