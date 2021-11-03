@@ -18,7 +18,7 @@ namespace Portfolio.DAL.Repositories
             {
                 c.Entry(p).State = EntityState.Added;
                 c.SaveChanges();
-            }          
+            }
         }
 
         public void Delete(T p)
@@ -41,9 +41,11 @@ namespace Portfolio.DAL.Repositories
 
         public T Get(Expression<Func<T, bool>> filter = null)
         {
-            using (var c= new Context())
+            using (var c = new Context())
             {
-                return c.Set<T>().SingleOrDefault(filter);
+                return filter == null ?
+                    c.Set<T>().SingleOrDefault() :
+                    c.Set<T>().SingleOrDefault(filter);
             }
         }
 
@@ -60,7 +62,8 @@ namespace Portfolio.DAL.Repositories
             using (var c = new Context())
             {
                 return filter == null ?
-                    c.Set<T>().ToList() : c.Set<T>().Where(filter).ToList();
+                    c.Set<T>().ToList() :
+                    c.Set<T>().Where(filter).ToList();
             }
         }
 
