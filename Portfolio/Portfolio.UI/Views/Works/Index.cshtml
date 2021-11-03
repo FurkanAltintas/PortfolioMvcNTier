@@ -1,0 +1,45 @@
+﻿@model List<Portfolio.ENTITY.Concrete.Work>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+
+    int i = 000;
+}
+
+<div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+                <div class="text-center">
+                    <h1 class="h2">02 : Works</h1>
+                    <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide projects-carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                @foreach (var item in Model)
+                                {
+                                    i++;
+                                    <div class="col-sm-4">
+                                        <a href="./work.html" title="" class="black-image-project-hover">
+                                            <img src="~/Content/univers/assets/images/work03-hover.jpg" alt="" class="img-responsive">
+                                        </a>
+                                        <div class="card-container card-container-lg">
+                                            <h4>@i.ToString("000")/@Model.Count().ToString("000")</h4>
+                                            <h3>@item.Title</h3>
+                                            <p>@(item.Desription.Length < 75 ? item.Desription : item.Desription.Substring(0, item.Desription.Substring(0, 75).LastIndexOf(" ")))</p>
+                                            <a href="/@this.ViewContext.RouteData.Values["controller"]/@item.Id/@item.Title" title="" class="btn btn-default">Discover</a>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
