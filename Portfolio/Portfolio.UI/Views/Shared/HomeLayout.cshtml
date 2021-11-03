@@ -1,6 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+@{ string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+    string action = this.ViewContext.RouteData.Values["action"].ToString(); }
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -34,12 +37,18 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav ">
-                        <li><a href="./index.html" title="">01 : Home</a></li>
-                        <li><a href="./works.html" title="">02 : Works</a></li>
-                        <li><a href="./about.html" title="">03 : About me</a></li>
-                        <li><a href="./contact.html" title="">04 : Contact</a></li>
-                        <li><a href="./components.html" title="">05 : Components</a></li>
+                        <li><a href="@Url.Action("","Home")" title="">01 : Home</a></li>
+                        <li><a href="@Url.Action("","Works")" title="">02 : Works</a></li>
+                        <li><a href="@Url.Action("","About")" title="">03 : About me</a></li>
+                        <li><a href="@Url.Action("","Contact")" title="">04 : Contact</a></li>
+                        <li><a href="~/Content/univers/components.html" title="">05 : Components</a></li>
                     </ul>
+
+                    @if (controller == "Works" && action == "Detail")
+                    {
+                        @Html.Action("List", "Works")
+                    }
+
                 </div>
 
             </div>
@@ -52,7 +61,8 @@
         document.addEventListener("DOMContentLoaded", function (event) {
             type();
             movingBackgroundImage();
-        });</script>
+        });
+    </script>
 
 
     <script type="text/javascript" src="@Url.Content("~/Content/univers/main.70a66962.js")"></script>
