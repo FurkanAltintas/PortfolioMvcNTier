@@ -1,0 +1,21 @@
+﻿@model List<Portfolio.ENTITY.Concrete.Work>
+
+@{ 
+    string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+    int i = 0;
+}
+
+<ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+    @foreach (var item in Model)
+    {
+        i++;
+        if (ViewBag.Id == i)
+        {
+            <li><a href="/@controller/@item.Id/@item.Title" title="" class="active">@i.ToString("000")</a></li>
+        }
+        else
+        {
+        <li><a href="/@controller/@item.Id/@item.Title" title="">@i.ToString("000")</a></li>
+        }
+    }
+</ul>
