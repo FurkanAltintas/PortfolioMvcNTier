@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 
 namespace Portfolio.BLL.Concrete
 {
-    public class BackgroundManager : IGenericService<Background>
+    public class BackgroundManager : IBackgroundService
     {
         IBackgroundDal _backgroundDal;
+        IDegreeDal _degreeDal;
 
-        public BackgroundManager(IBackgroundDal backgroundDal)
+        public BackgroundManager(IBackgroundDal backgroundDal, IDegreeDal degreeDal)
         {
             _backgroundDal = backgroundDal;
+            _degreeDal = degreeDal;
         }
 
         public void Add(Background p)
@@ -31,6 +33,11 @@ namespace Portfolio.BLL.Concrete
                 _backgroundDal.Delete(p);
         }
 
+        public Background Get()
+        {
+            return _backgroundDal.Get();
+        }
+
         public Background Get(int id)
         {
             return _backgroundDal.Get(id);
@@ -39,6 +46,11 @@ namespace Portfolio.BLL.Concrete
         public List<Background> List()
         {
             return _backgroundDal.List();
+        }
+
+        public List<Degree> ListDegree()
+        {
+            return _degreeDal.List();
         }
 
         public void Update(Background p)
