@@ -55,6 +55,7 @@
     <Compile Include="Abstract\IAuthorityDal.cs" />
     <Compile Include="Abstract\IBackgroundDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
+    <Compile Include="Abstract\IDegreeDal.cs" />
     <Compile Include="Abstract\IGenericRepository.cs" />
     <Compile Include="Abstract\IInformationDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="EntityFramework\EfAuthorityRepository.cs" />
     <Compile Include="EntityFramework\EfBackgroundRepository.cs" />
     <Compile Include="EntityFramework\EfContactRepository.cs" />
+    <Compile Include="EntityFramework\EfDegreeRepository.cs" />
     <Compile Include="EntityFramework\EfInformationRepository.cs" />
     <Compile Include="EntityFramework\EfUserRepository.cs" />
     <Compile Include="EntityFramework\EfWorkRepository.cs" />
