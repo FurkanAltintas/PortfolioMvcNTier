@@ -1568,6 +1568,10 @@
     <Content Include="Areas\Dashboard\Views\Contact\Index.cshtml" />
     <Content Include="Areas\Dashboard\Views\Works\Index.cshtml" />
     <Content Include="Areas\Dashboard\Views\Shared\Alert.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Works\Create.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Works\Edit.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Shared\Navbar.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Shared\Header.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\HomeLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
