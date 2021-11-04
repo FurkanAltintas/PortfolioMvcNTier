@@ -1,0 +1,53 @@
+﻿
+@{ 
+    string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<div class="slim-navbar">
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item active">
+                <a class="nav-link active" href="@Url.Action("Index","Home")">
+                    <i class="icon ion-ios-home-outline"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Background")">
+                    <i class="icon ion-ios-camera-outline"></i>
+                    <span>Background</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Works")">
+                    <i class="icon ion-ios-compose-outline"></i>
+                    <span>Works</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","About")">
+                    <i class="icon ion-ios-person-outline"></i>
+                    <span>About</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Contact")">
+                    <i class="icon ion-ios-email-outline"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Messages")">
+                    <i class="icon ion-ios-chatboxes-outline"></i>
+                    <span>Messages</span>
+                    <span class="square-8"></span>
+                </a>
+            </li>
+        </ul>
+    </div><!-- container -->
+</div>
