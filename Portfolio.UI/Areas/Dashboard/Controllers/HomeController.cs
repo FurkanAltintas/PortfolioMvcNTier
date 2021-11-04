@@ -13,10 +13,5 @@ namespace Portfolio.UI.Areas.Dashboard.Controllers
         {
             return View();
         }
-
-        public PartialViewResult Alert()
-        {
-            return PartialView();
-        }
     }
 }
