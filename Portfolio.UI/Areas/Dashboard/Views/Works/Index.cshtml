@@ -7,9 +7,9 @@
     int i = 0;
 }
 
-@if (Model.Count() != 0)
+@if (Model.Count() == 0)
 {
-    @Html.Action("Alert", "Home", new { area = "Dashboard" })
+    @Html.Partial("Alert")
 }
 
 <div class="section-wrapper mb-4">
@@ -44,4 +44,4 @@
     </div>
 </div>
 
-<a href="@Url.Action("Create")" class="btn btn-secondary btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</a>
+<a href="@Url.Action("Create")" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</a>
