@@ -4,6 +4,7 @@ using Portfolio.ENTITY.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,17 +26,21 @@ namespace Portfolio.BLL.Concrete
             _backgroundDal.Add(p);
         }
 
-        public void Delete(Background p, int id)
+        public void Delete(int id)
         {
-            if (id > 0)
-                _backgroundDal.Delete(id);
-            else
-                _backgroundDal.Delete(p);
+            _backgroundDal.Delete(id);
         }
 
-        public Background Get()
+        public void Delete(Background p)
         {
-            return _backgroundDal.Get();
+            _backgroundDal.Delete(p);
+        }
+
+        public Background Get(Expression<Func<Background, bool>> filter = null)
+        {
+            return filter == null ?
+                _backgroundDal.Get() :
+                _backgroundDal.Get(filter);
         }
 
         public Background Get(int id)
@@ -43,9 +48,11 @@ namespace Portfolio.BLL.Concrete
             return _backgroundDal.Get(id);
         }
 
-        public List<Background> List()
+        public List<Background> List(Expression<Func<Background, bool>> filter = null)
         {
-            return _backgroundDal.List();
+            return filter == null ?
+                _backgroundDal.List() :
+                _backgroundDal.List(filter);
         }
 
         public List<Degree> ListDegree()
