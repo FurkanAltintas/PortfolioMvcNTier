@@ -4,6 +4,7 @@ using Portfolio.ENTITY.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,16 +26,21 @@ namespace Portfolio.BLL.Concrete
             _contactDal.Add(p);
         }
 
-        public void Delete(Contact p, int id)
+        public void Delete(int id)
         {
-            if (id > 0)
-            {
-                _contactDal.Delete(id);
-            }
-            else
-            {
-                _contactDal.Delete(p);
-            }
+            _contactDal.Delete(id);
+        }
+
+        public void Delete(Contact p)
+        {
+            _contactDal.Delete(p);
+        }
+
+        public Contact Get(Expression<Func<Contact, bool>> filter = null)
+        {
+            return filter == null ?
+                _contactDal.Get() :
+                _contactDal.Get(filter);
         }
 
         public Contact Get(int id)
@@ -47,9 +53,11 @@ namespace Portfolio.BLL.Concrete
             return _informatinDal.Get();
         }
 
-        public List<Contact> List()
+        public List<Contact> List(Expression<Func<Contact, bool>> filter = null)
         {
-            return _contactDal.List();
+            return filter == null ?
+                _contactDal.List() :
+                _contactDal.List(filter);
         }
 
         public void Update(Contact p)
