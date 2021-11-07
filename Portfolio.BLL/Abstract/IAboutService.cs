@@ -9,6 +9,5 @@ namespace Portfolio.BLL.Abstract
 {
     public interface IAboutService : IGenericService<About>
     {
-        About Get();
     }
 }
