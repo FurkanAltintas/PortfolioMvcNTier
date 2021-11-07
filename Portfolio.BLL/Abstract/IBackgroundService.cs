@@ -10,6 +10,5 @@ namespace Portfolio.BLL.Abstract
     public interface IBackgroundService : IGenericService<Background>
     {
         List<Degree> ListDegree();
-        Background Get();
     }
 }
