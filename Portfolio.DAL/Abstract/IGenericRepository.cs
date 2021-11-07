@@ -10,6 +10,7 @@ namespace Portfolio.DAL.Abstract
     public interface IGenericRepository<T> where T : class
     {
         List<T> List(Expression<Func<T, bool>> filter = null);
+
         T Get(Expression<Func<T, bool>> filter = null);
         T Get(int id);
 
