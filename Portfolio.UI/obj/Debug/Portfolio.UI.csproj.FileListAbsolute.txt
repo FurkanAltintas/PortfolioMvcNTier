@@ -118,3 +118,8 @@ C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.cs
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.csproj.CopyComplete
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.dll
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\obj\Debug\Portfolio.UI.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\bin\FluentValidation.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\bin\System.ComponentModel.Primitives.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\bin\System.ValueTuple.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\bin\FluentValidation.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.UI\bin\System.ValueTuple.xml
