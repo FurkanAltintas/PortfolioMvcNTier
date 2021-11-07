@@ -1,0 +1,45 @@
+﻿@model Portfolio.ENTITY.Concrete.User
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Dashboard/Views/Shared/DashboardLayout.cshtml";
+}
+
+@using (Html.BeginForm("Create", "User", FormMethod.Post))
+{
+    <div class="row mg-b-25">
+        <div class="col-lg-6 form-group">
+            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Adınız" })
+            @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-6 form-group">
+            @Html.TextBoxFor(x => x.SurName, new { @class = "form-control", placeholder = "Soyadınız" })
+            @Html.ValidationMessageFor(x => x.SurName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12 form-group">
+            @Html.TextBoxFor(x => x.FullName, new { @class = "form-control", placeholder = "Kullanıcı Adı" })
+            @Html.ValidationMessageFor(x => x.FullName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12 form-group">
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Mailiniz" })
+            @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12 form-group">
+            @Html.PasswordFor(x => x.Password, new { @class = "form-control", placeholder = "Şifreniz" })
+            @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-12 form-group">
+            @Html.DropDownListFor(x => x.AuthorityId, (IEnumerable<SelectListItem>)ViewBag.Authority, "Yetki Seçiniz", new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.AuthorityId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-lg-1 form-group">
+            <button type="submit" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</button>
+        </div>
+    </div>
+}
