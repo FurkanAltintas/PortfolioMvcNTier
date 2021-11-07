@@ -26,3 +26,8 @@ C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.csproj.CopyComplete
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.dll
 C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\obj\Debug\Portfolio.BLL.pdb
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\bin\Debug\FluentValidation.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\bin\Debug\System.ValueTuple.dll
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\bin\Debug\FluentValidation.xml
+C:\Users\furka\Documents\GitHub\Portfolio\Portfolio.BLL\bin\Debug\System.ValueTuple.xml
