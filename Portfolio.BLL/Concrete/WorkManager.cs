@@ -4,6 +4,7 @@ using Portfolio.ENTITY.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,12 +24,21 @@ namespace Portfolio.BLL.Concrete
             _workDal.Add(p);
         }
 
-        public void Delete(Work p, int id)
+        public void Delete(int id)
         {
-            if (id > 0)
-                _workDal.Delete(id);
-            else
-                _workDal.Delete(p);
+            _workDal.Delete(id);
+        }
+
+        public void Delete(Work p)
+        {
+            _workDal.Delete(p);
+        }
+
+        public Work Get(Expression<Func<Work, bool>> filter = null)
+        {
+            return filter == null ?
+                _workDal.Get() :
+                _workDal.Get(filter);
         }
 
         public Work Get(int id)
@@ -36,9 +46,11 @@ namespace Portfolio.BLL.Concrete
             return _workDal.Get(id);
         }
 
-        public List<Work> List()
+        public List<Work> List(Expression<Func<Work, bool>> filter = null)
         {
-            return _workDal.List();
+            return filter == null ?
+                _workDal.List() :
+                _workDal.List(filter);
         }
 
         public void Update(Work p)
