@@ -1,0 +1,81 @@
+﻿@model Portfolio.ENTITY.Concrete.User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="themepixels">
+    <meta name="twitter:creator" content="themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Slim">
+    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="twitter:image" content="http://themepixels.me/slim/img/slim-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/slim">
+    <meta property="og:title" content="Slim">
+    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+
+    <meta property="og:image" content="http://themepixels.me/slim/img/slim-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/slim/img/slim-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+
+    <title>Slim Responsive Bootstrap 4 Admin Template</title>
+
+    <!-- Vendor css -->
+    <link href="~/App_Themes/Dashboard/slim/app/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/App_Themes/Dashboard/slim/app/lib/Ionicons/css/ionicons.css" rel="stylesheet">
+
+    <!-- Slim CSS -->
+    <link rel="stylesheet" href="~/App_Themes/Dashboard/slim/app/css/slim.css">
+    <link rel="stylesheet" href="~/App_Themes/Dashboard/slim/app/css/slim.one.css">
+
+</head>
+<body>
+
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        <div class="signin-wrapper">
+            <div class="signin-box">
+                <h2 class="slim-logo"><a href="@Url.Action("","")">slim<span>.</span></a></h2>
+                <h2 class="signin-title-primary">Tekrar hoşgeldiniz!</h2>
+                <h3 class="signin-title-secondary">Devam etmek için oturum açınız.</h3>
+                <div class="form-group">
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Mailinizi giriniz" })
+                </div>
+                <div class="form-group">
+                    @Html.PasswordFor(x => x.Password, new { @class = "form-control", placeholder = "Şifrenizi giriniz" })
+                </div>
+                @if (ViewBag.Error != null)
+                {
+                    <div class="form-group">
+                        <div class="alert alert-outline alert-danger mg-b-0" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <strong>Hatalı Giriş!</strong> @ViewBag.Error
+                        </div>
+                    </div>
+                }
+                <button type="submit" class="btn btn-primary btn-block btn-signin">Giriş Yap</button>
+                <p class="mg-b-0">Don't have an account? <a href="#">Kayıt Ol</a></p>
+            </div>
+        </div>
+    }
+
+    <script src="~/App_Themes/Dashboard/slim/app/lib/jquery/js/jquery.js"></script>
+    <script src="~/App_Themes/Dashboard/slim/app/lib/popper.js/js/popper.js"></script>
+    <script src="~/App_Themes/Dashboard/slim/app/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/App_Themes/Dashboard/slim/app/js/slim.js"></script>
+</body>
+</html>
