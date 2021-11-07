@@ -1,0 +1,51 @@
+﻿@model List<Portfolio.ENTITY.Concrete.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Dashboard/Views/Shared/DashboardLayout.cshtml";
+
+    int i = 0;
+}
+
+@if (Model.Count() == 0)
+{
+    @Html.Partial("Alert")
+}
+
+<div class="section-wrapper mb-4">
+    <div class="table-responsive">
+        <table class="table mg-b-0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Adı Soyadı</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Email</th>
+                    <th>Kayıt Tarihi</th>
+                    <th>Durum</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    i++;
+                    <tr>
+                        <td>@i</td>
+                        <td>@item.Name @item.SurName</td>
+                        <td>@item.FullName</td>
+                        <td><a href="mailto:@item.Email">@item.Email</a></td>
+                        <td>@item.CreateDate.ToString("dd MM yyyy HH:mm")</td>
+                        <td>@Html.Raw(item.IsActive == true ? "<i class='fa fa-check'></i>" : "<i class='fa fa-close'></i>")</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = item.Id })"><i class="fa fa-pencil mr-3"></i></a>
+                            <a href="@Url.Action("Delete", new { id = item.Id })"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a href="@Url.Action("Create")" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</a>
