@@ -1414,7 +1414,6 @@
     <Content Include="App_Themes\Dashboard\slim\gulpfile.js" />
     <Content Include="App_Themes\Home\univers\about.html" />
     <Content Include="App_Themes\Home\univers\assets\apple-icon-180x180.png" />
-    <Content Include="App_Themes\Home\univers\assets\images\profil2.jpg" />
     <Content Include="App_Themes\Home\univers\assets\images\profil.jpg" />
     <Content Include="App_Themes\Home\univers\assets\images\space.jpg" />
     <Content Include="App_Themes\Home\univers\assets\images\work001-01.jpg" />
@@ -1437,8 +1436,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\AboutController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\BackgroundController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\CalendarController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\ContactController.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\DegreeController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\HomeController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\UserController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\WorksController.cs" />
@@ -1587,6 +1590,14 @@
     <Content Include="Areas\Dashboard\Views\User\Index.cshtml" />
     <Content Include="Areas\Dashboard\Views\User\Create.cshtml" />
     <Content Include="Areas\Dashboard\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Background\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Calendar\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Degree\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Degree\Create.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Degree\Edit.cshtml" />
+    <Content Include="Areas\Dashboard\Views\About\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\About\Edit.cshtml" />
+    <Content Include="Areas\Dashboard\Views\About\Create.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\HomeLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
