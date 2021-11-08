@@ -22,7 +22,7 @@ namespace Portfolio.UI.Areas.Dashboard.Controllers
         }
 
         public ActionResult Header()
-        { return View(SignIn()); }
+        { return View(); }
 
         public ActionResult Navbar()
         {
