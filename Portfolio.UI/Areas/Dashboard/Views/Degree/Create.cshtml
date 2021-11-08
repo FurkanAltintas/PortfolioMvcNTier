@@ -1,0 +1,18 @@
+﻿@model Portfolio.ENTITY.Concrete.Degree
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Dashboard/Views/Shared/DashboardLayout.cshtml";
+}
+
+@using (Html.BeginForm("Create", "Degree", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Ünvan" })
+        @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-danger">Create Degree</button>
+    </div>
+}
