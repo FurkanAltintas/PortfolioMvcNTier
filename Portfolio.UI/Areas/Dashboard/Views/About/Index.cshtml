@@ -1,0 +1,25 @@
+﻿@model List<Portfolio.ENTITY.Concrete.About>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Dashboard/Views/Shared/DashboardLayout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="media media-demo mb-4">
+        <div class="media-body mg-r-50">
+            <h1 class="tx-info mg-b-20">@item.Title</h1>
+            @Html.Raw(item.Description)
+        </div>
+        <img src="@item.Image" class="d-flex wd-300" alt="Image">
+    </div>
+}
+
+<a href="@Url.Action("Edit")" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-book mg-r-5"></i>Edit</a>
+
+
+@if (Model.Count() != 1)
+{
+    <a href="@Url.Action("Create")" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</a>
+}
