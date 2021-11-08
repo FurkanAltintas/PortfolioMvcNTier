@@ -1,0 +1,12 @@
+﻿@model Portfolio.ENTITY.Concrete.Background
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Dashboard/Views/Shared/DashboardLayout.cshtml";
+}
+
+<div class="section-wrapper mb-4">
+    <img src="@Model.Image" style="width: -webkit-fill-available;" />
+</div>
+
+<a href="@Url.Action("Create")" class="btn btn-outline-danger btn-block mg-b-10"><i class="fa fa-paper-plane mg-r-5"></i>Create</a>
