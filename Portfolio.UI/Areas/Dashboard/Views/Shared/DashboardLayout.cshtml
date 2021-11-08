@@ -40,6 +40,7 @@
     <link href="~/App_Themes/Dashboard/slim/app/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="~/App_Themes/Dashboard/slim/app/lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="~/App_Themes/Dashboard/slim/app/lib/rickshaw/css/rickshaw.min.css" rel="stylesheet">
+    <link href="~/App_Themes/Dashboard/slim/app/lib/fullcalendar/css/fullcalendar.css" rel="stylesheet">
 
     <!-- Slim CSS -->
     <link rel="stylesheet" href="~/App_Themes/Dashboard/slim/app/css/slim.css">
@@ -77,6 +78,8 @@
     <script src="~/App_Themes/Dashboard/slim/app/lib/popper.js/js/popper.js"></script>
     <script src="~/App_Themes/Dashboard/slim/app/lib/bootstrap/js/bootstrap.js"></script>
     <script src="~/App_Themes/Dashboard/slim/app/lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="~/App_Themes/Dashboard/slim/app/lib/moment/js/moment.js"></script>
+    <script src="~/App_Themes/Dashboard/slim/app/lib/fullcalendar/js/fullcalendar.js"></script>
     <script src="~/App_Themes/Dashboard/slim/app/lib/d3/js/d3.js"></script>
     <script src="~/App_Themes/Dashboard/slim/app/lib/rickshaw/js/rickshaw.min.js"></script>
     <script src="~/App_Themes/Dashboard/slim/app/lib/Flot/js/jquery.flot.js"></script>
@@ -84,6 +87,19 @@
     <script src="~/App_Themes/Dashboard/slim/app/lib/peity/js/jquery.peity.js"></script>
 
     <script src="~/App_Themes/Dashboard/slim/app/js/slim.js"></script>
+    <script>
+        $(function () {
+            'use strict';
+
+            $('#fullCalendar').fullCalendar({
+                header: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'today next'
+                }
+            });
+        });
+    </script>
     <script src="~/App_Themes/Dashboard/slim/app/js/ResizeSensor.js"></script>
     <script>
         $(function () {
