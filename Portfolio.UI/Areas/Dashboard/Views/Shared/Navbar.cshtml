@@ -1,5 +1,4 @@
-﻿
-@{ 
+﻿@{ 
     string controller = this.ViewContext.RouteData.Values["controller"].ToString();
 }
 
@@ -13,31 +12,32 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index","Background")">
-                    <i class="icon ion-ios-camera-outline"></i>
-                    <span>Background</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index","Works")">
+            <li class="nav-item with-sub">
+                <a class="nav-link" href="#">
                     <i class="icon ion-ios-compose-outline"></i>
-                    <span>Works</span>
+                    <span>Employee</span>
                 </a>
+                <div class="sub-item">
+                    <ul>
+                        <li><a href="@Url.Action("Index","About")">About</a></li>
+                        <li><a href="@Url.Action("Index","Background")">Background</a></li>
+                        <li><a href="@Url.Action("Index","Works")">Work</a></li>
+                        <li><a href="@Url.Action("Index","User")">User</a></li>
+                    </ul>
+                </div>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Index","About")">
-                    <i class="icon ion-ios-person-outline"></i>
-                    <span>About</span>
-                </a>
-            </li>
-
+           
             <li class="nav-item">
                 <a class="nav-link" href="@Url.Action("Index","Contact")">
                     <i class="icon ion-ios-email-outline"></i>
                     <span>Contact</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("Index","Calendar")">
+                    <i class="icon ion-ios-email-outline"></i>
+                    <span>Calendar</span>
                 </a>
             </li>
 
